@@ -1,0 +1,101 @@
+html{
+    font-family: Arial, sans-serif;
+}
+/* remove */
+.image-wrapper {
+    display: flex; 
+    flex-wrap: wrap;
+}
+.image-wrapper img {
+    width: 50%;
+    height: 75%;
+}
+
+.headline {
+    justify-content: center;
+
+}
+
+body{
+    background-color: #3c3c3c;
+    justify-content: center;
+    align-items: center;
+}
+.box {
+    position: absolute; /*base z-index backlayer absolute front layer relative */
+    text-align: center;
+    z-index: 1; 
+}
+/* remove */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    transition: transform 1s;
+    background-color: #1a1a1a;
+}
+
+.slide-left {
+    left: 0;
+    transform: translateX(-100%);
+}
+
+.slide-right {
+    right: 0;
+    transform: translateX(100%);
+}
+
+.title {
+    position: absolute;
+    font-size: 3em;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+
+.login-form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+
+.login-form h2 {
+    margin-bottom: 20px;
+}
+
+.login-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-form form input {
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.login-form form button {
+    padding: 10px;
+    background-color: #fff;
+    color: #1a1a1a;
+    border: none;
+    border-radius: 5px;
+}
